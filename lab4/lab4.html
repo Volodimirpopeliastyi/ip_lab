@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 20px 0 0 90px;
+            color: #111;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 15px 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+
+        fieldset {
+            width: 335px;
+            border: 1px solid #888;
+            padding: 8px 10px 12px 10px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-size: 14px;
+            padding: 0 3px;
+        }
+
+        .row {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 150px;
+            height: 15px;
+        }
+
+        input[type="email"] {
+            width: 125px;
+            height: 15px;
+        }
+
+        input[type="password"] {
+            width: 130px;
+            height: 15px;
+        }
+
+        input[type="number"] {
+            width: 48px;
+            height: 15px;
+        }
+
+        input[type="date"] {
+            width: 105px;
+            height: 18px;
+        }
+
+        .gender,
+        .languages {
+            margin-top: 5px;
+            margin-bottom: 12px;
+        }
+
+        .gender label,
+        .languages label {
+            display: block;
+            margin: 2px 0;
+        }
+
+        select.country {
+            width: 105px;
+            height: 21px;
+        }
+
+        .subjects {
+            width: 100px;
+            height: 100px;
+        }
+
+        .interest {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        input[type="range"] {
+            width: 95px;
+        }
+
+        textarea {
+            width: 290px;
+            height: 55px;
+            resize: both;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        input[type="file"] {
+            font-size: 13px;
+        }
+
+        input[type="color"] {
+            width: 37px;
+            height: 23px;
+            padding: 1px;
+        }
+
+        input[type="time"] {
+            width: 68px;
+            height: 20px;
+        }
+
+        input[type="submit"] {
+            margin-top: 8px;
+            padding: 2px 8px;
+        }
+
+        footer {
+            font-size: 13px;
+            margin-top: -5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student card FORM</h1>
+
+    <h2>Personal Information</h2>
+
+    <fieldset>
+        <legend>Provide your details</legend>
+
+        <div class="row">
+            <label>
+                Full Name:
+                <input type="text" placeholder="Enter your full name">
+            </label>
+        </div>
+
+        <div class="row">
+            <label>
+                Email:
+                <input type="email" placeholder="Enter your email">
+            </label>
+        </div>
+
+        <div class="row">
+            <label>
+                Password:
+                <input type="password" placeholder="Enter a password">
+            </label>
+        </div>
+
+        <div class="row">
+            <label>
+                Age:
+                <input type="number">
+            </label>
+        </div>
+
+        <div class="row">
+            <label>
+                Date of Birth:
+                <input type="date">
+            </label>
+        </div>
+
+        <label>Gender:</label>
+
+        <div class="gender">
+            <label>
+                <input type="radio" name="gender">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender">
+                Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender">
+                Other
+            </label>
+        </div>
+
+        <label>Languages Known:</label>
+
+        <div class="languages">
+            <label>
+                <input type="checkbox">
+                English
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Spanish
+            </label>
+
+            <label>
+                <input type="checkbox">
+                French
+            </label>
+        </div>
+
+        <div class="row">
+            <label>
+                Country:
+                <select class="country">
+                    <option>Select your country</option>
+                    <option>Ukraine</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>UK</option>
+                </select>
+            </label>
+        </div>
+
+    </fieldset>
+
+
+    <h2>College Subjects</h2>
+
+    <fieldset>
+        <legend>Select your subjects</legend>
+
+        <label>Choose subjects:</label><br>
+
+        <select class="subjects" multiple>
+            <option>Mathematics</option>
+            <option>Computer Science</option>
+            <option>Physics</option>
+            <option>Chemistry</option>
+            <option>English</option>
+        </select>
+
+        <br><br>
+
+        <div class="interest">
+            <label>Rate your interest in Computer Science:</label>
+            <input type="range" min="0" max="100" value="70">
+        </div>
+
+    </fieldset>
+
+
+    <h2>Skills Assessment</h2>
+
+    <fieldset>
+        <legend>Assess your skills</legend>
+
+        <label>Describe your skills:</label><br>
+
+        <textarea placeholder="List your skills here..."></textarea>
+
+        <br><br>
+
+        <label>
+            Upload your resume:
+            <input type="file">
+        </label>
+
+        <br><br>
+
+        <label>
+            Pick your favorite color:
+            <input type="color" value="#000000">
+        </label>
+
+        <br><br>
+
+        <label>
+            Preferred study time:
+            <input type="time">
+        </label>
+
+        <br>
+
+        <input type="submit" value="Submit Survey">
+
+    </fieldset>
+
+    <footer>
+        © Student card (Volodymyr). All rights reserved.
+    </footer>
+
+</body>
+</html>
