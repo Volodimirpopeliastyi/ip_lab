@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма: Картка студента</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        fieldset {
+            width: 350px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 180px;
+        }
+        textarea {
+            width: 300px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Форма "Картка студента"</h1>
+
+    <form>
+        <!-- Блок 1: Особисті дані -->
+        <h2>Особиста інформація</h2>
+        <fieldset>
+            <legend>Введіть ваші дані</legend>
+            
+            <label>ПІБ: </label>
+            <input type="text" placeholder="Ваше повне ім'я"><br><br>
+            
+            <label>Email: </label>
+            <input type="email" placeholder="example@mail.com"><br><br>
+            
+            <label>Пароль: </label>
+            <input type="password"><br><br>
+            
+            <label>Вік: </label>
+            <input type="number" min="16" max="100"><br><br>
+            
+            <label>Дата народження: </label>
+            <input type="date"><br><br>
+            
+            <label>Стать:</label><br>
+            <input type="radio" name="gender"> Чоловіча<br>
+            <input type="radio" name="gender"> Жіноча<br>
+            <input type="radio" name="gender"> Інша<br><br>
+            
+            <label>Які мови знаєте:</label><br>
+            <input type="checkbox"> Англійська<br>
+            <input type="checkbox"> Іспанська<br>
+            <input type="checkbox"> Французька<br><br>
+            
+            <label>Країна: </label>
+            <select>
+                <option>Оберіть країну</option>
+                <option>Україна</option>
+                <option>США</option>
+                <option>Канада</option>
+                <option>Велика Британія</option>
+            </select>
+        </fieldset>
+
+        <!-- Блок 2: Предмети -->
+        <h2>Коледж / Предмети</h2>
+        <fieldset>
+            <legend>Вибір предметів</legend>
+            
+            <label>Оберіть ваші предмети (утримуйте Ctrl):</label><br>
+            <select size="5" multiple style="width: 150px;">
+                <option>Математика</option>
+                <option>Комп'ютерні науки</option>
+                <option>Фізика</option>
+                <option>Хімія</option>
+                <option>Англійська мова</option>
+            </select>
+            <br><br>
+            
+            <label>Рівень інтересу до IT (0-100):</label><br>
+            <input type="range" min="0" max="100" value="70">
+        </fieldset>
+
+        <!-- Блок 3: Навички та файли -->
+        <h2>Оцінка навичок</h2>
+        <fieldset>
+            <legend>Додатково</legend>
+            
+            <label>Опишіть ваші навички:</label><br>
+            <textarea placeholder="Пишіть тут..."></textarea>
+            <br><br>
+            
+            <label>Завантажити резюме: </label>
+            <input type="file"><br><br>
+            
+            <label>Улюблений колір: </label>
+            <input type="color" value="#0000ff"><br><br>
+            
+            <label>Зручний час для навчання: </label>
+            <input type="time"><br><br>
+            
+            <input type="submit" value="Надіслати анкету">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>© Картка студента (Володимир). Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
