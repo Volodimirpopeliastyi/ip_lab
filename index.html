@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Лабораторна робота 2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Програмування в інтернет</h1>
-        <nav>
-            <ul>
-                <li> <a href="/"> Головна - список робіт </a> </li>
-                <li> <a href="#labs"> Лабораторні роботи </a> 
-                <ol>
-                    <li> <a href="lab1/"> Lab1 - Створення веб-сторінки зі статичним текстом та розміщення в інтернеті </a> </li>
-                    <li> <a href="lab2/"> Lab2 - Створення меню сайту. Розміщення проекту в репозиторії GitHub </a> </li>
-                    <li> <a href="lab3/"> Lab3 - Розробка веб-сторінки з графічними елементами і мультимедіа </a> </li>
-                    <li> <a href="lab4/"> Lab4 - Розробка веб-сторінки із формою “Анкета студента” </a> </li>
-                    <li> <a href="pr1/"> Pr1 - Розробка блогу "Мої три найкращі міста світу" </a> </li>
-                    <li> <a href="lab5/"> Lab5 - СSS. Робота з блочною моделлю. Інструменти веб-розробки Developer tools"</a></li>
-                
-                </ol>
-                </li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1>Лабораторна робота 2</h1>
+            <nav aria-label="Основна навігація">
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="file:///C:/Users/Admin/ip_labs/lab%202/index.html">Лаб 2</a></li>
+                    <li><a href="file:///C:/Users/Admin/ip_labs/lab%201/index.html">Lab1</a></li>
+                    <li><a href="file:///C:/Users/Admin/ip_labs/lab%203/index.html">Lab3</a></li>
+                    <li><a href="file:///C:/Users/Admin/ip_labs/lab%204/index.html">Lab4</a></li>
+                     <li><a href="file:///C:/Users/Admin/ip_labs/lab%205/index.html">Lab5</a></li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h2 id="labs">Лабораторні роботи</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eaque veniam atque doloribus enim deserunt explicabo eos! Molestias cupiditate magni ducimus cum excepturi fuga, labore est placeat minus, atque odit!</p>
-        </article>
+    <main class="container content-grid">
+        <section class="main-content">
+            <article class="card">
+                <h2>Семантична структура сторінки</h2>
+                <p>HTML5 дозволяє описувати зміст сторінки за допомогою семантичних тегів, таких як <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> та <code>&lt;footer&gt;</code>.</p>
+                <p>Правильна структура покращує доступність, SEO та читабельність коду.</p>
+            </article>
+
+            <article class="card">
+                <h3>Основні принципи</h3>
+                <ol>
+                    <li>Використання семантичних тегів для логічного поділу контенту.</li>
+                    <li>Організація навігації за допомогою списків і посилань.</li>
+                    <li>Розміщення вторинної інформації в бічній колонці.</li>
+                </ol>
+            </article>
+        </section>
+
+        <aside class="sidebar card">
+            <h3>Інші курси</h3>
+            <ul>
+                <li><a href="https://www.coursera.org/learn/database-structures-and-management-with-mysql" target="_blank" rel="noreferrer">Бази Даних</a></li>
+                <li><a href="https://www.coursera.org/specializations/software-engineering" target="_blank" rel="noreferrer">Системне Програмування</a></li>
+                <li><a href="https://www.coursera.org/specializations/liderazgo-motivacion-gestion-recursos-humanos" target="_blank" rel="noreferrer">Мультиплексорні технології</a></li>
+                <li><a href="https://www.coursera.org/learn/economia-y-finanzas-de-empresas" target="_blank" rel="noreferrer">Мережі електронних комунікацій</a></li>
+                <li><a href="https://www.coursera.org/learn/upravlinnya-chasom" target="_blank" rel="noreferrer">Іноземна мова</a></li>
+            </ul>
+        </aside>
     </main>
 
-    <aside>
-        <h2>Інші курси</h2>
-        <ol>
-            <li> <a href="https://www.coursera.org/learn/os-power-user-ua"> Мережні операційні системи</a> </li>
-            <li> <a href="https://ukr.pritula.academy/teams?utm_source=google&utm_medium=cpc&utm_campaign=23455002239&utm_content=192275936075&utm_term=%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%96%20%D0%BA%D1%83%D1%80%D1%81%D0%B8&utm_from=g&utm_from=google_ads&gad_source=1&gad_campaignid=23455002239&gbraid=0AAAAADnHyifTEA5CLPU2UcMoDnzvBg2Vv&gclid=CjwKCAjwqonVBhA4EiwA9wYJ3WYX-4rgrewvfRuen-bCdZjtJTmVHyuNTRSi-ZkZAAVYutgE5fQLlRoCRPkQAvD_BwE">Корпоративні мережі</a> </li>
-            <li> <a href="https://www.ucnovator.com.ua/uk/navchannia/kke-course/">Мережі електронних комунікацій</a>  </li>
-            <li> <a href="https://econom.lnu.edu.ua/course/kompyuterni-merezhi-i-telekomunikatsiji-073-i">Телекомунікаційні та комп'ютерні мережі</a> </li>
-            <li> <a href="https://laba.ua/lecture/upravlinnya-finansami-v-biznesi?utm_source=google&utm_medium=cpc&utm_campaign=course&utm_content=search-course_DSA-ua&gad_source=1&gad_campaignid=22995653400&gbraid=0AAAAADkc1S6RNFqD0cpH_S4sEz3a5wS8L&gclid=CjwKCAjwqonVBhA4EiwA9wYJ3Ul9RNosT_lwOTE1ayXXeICo7tXJciAFgh8ujQxdEO337su3h__ZYBoCb80QAvD_BwE">Економіка галузі</a> </li>
-        </ol>
-    </aside>
-
-    <footer>
-        &copy;Copyright 2026 by Volodymyr. All right reserved.
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 by Volodymyr. Усі права захищені.</p>
+        </div>
     </footer>
 </body>
 </html>
