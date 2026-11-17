@@ -1,0 +1,415 @@
+/* Скидання стандартних стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основні стилі */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2D2D2D;
+}
+
+/* Шапка сайту */
+.header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип */
+.logo img {
+    width: 154px;
+    height: 35px;
+}
+
+/* Навігація */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+/* Кнопка Log in */
+.login {
+    background-color: #3366FF;
+    color: #FFFFFF !important;
+    padding: 12px 40px;
+    border-radius: 10px;
+}
+/* Головний блок Hero */
+.hero {
+    background-color: #F8F6FF;
+    padding: 70px 0;
+}
+
+.hero-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Текст */
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #888888;
+    margin-bottom: 50px;
+    max-width: 450px;
+}
+
+/* Жовта кнопка */
+.hero-button {
+    display: inline-block;
+    background-color: #FDDC7A;
+    color: #2D2D2D;
+    padding: 18px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Фотографія собак */
+.hero-image img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+/* Секція Video */
+.video-section {
+    background-color: #F2FAF8;
+    padding: 70px 20px;
+}
+
+/* Контейнер відео */
+.video-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Зображення відео */
+.video-preview {
+    position: relative;
+    width: 765px;
+    max-width: 100%;
+}
+
+.video-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Кнопка Play */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 55px;
+    pointer-events: none;
+}
+/* Секція партнерів */
+.partners {
+    background-color: #FFFFFF;
+    padding: 0 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контейнер логотипів */
+.partners-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Зображення логотипів */
+.partners-container img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+}
+/* Секція Features */
+.features {
+    background-color: #FFFFFF;
+    padding: 80px 20px;
+}
+
+.features-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+/* USER FEEDBACK */
+
+.feedback {
+    background-color: #EDE5FF;
+    padding: 100px 20px;
+}
+
+.feedback-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feedback-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.feedback-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-content {
+    flex: 1;
+}
+
+.quote-icon {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.feedback-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #2D2D2D;
+}
+
+.feedback-author {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .feedback-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .feedback-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* CTA SECTION */
+
+.cta-section {
+    background-color: #FCFAF5;
+    padding: 80px 20px;
+}
+
+.cta-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.cta-content {
+    flex: 1;
+}
+
+.cta-content h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #2D2D2D;
+    margin-bottom: 30px;
+}
+
+.cta-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #999999;
+    margin-bottom: 40px;
+    max-width: 350px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #F8D57F;
+    color: #2D2D2D;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.cta-image {
+    flex: 1;
+}
+
+.cta-image img {
+    display: block;
+    width: 100%;
+    max-width: 475px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-content h2 {
+        font-size: 42px;
+    }
+
+    .cta-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: #ffffff;
+    padding: 60px 20px 30px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 55px;
+}
+
+.footer-left p {
+    margin-bottom: 15px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Poppins, sans-serif;
+    min-width: 0;
+}
+
+.footer-form button {
+    background-color: #3366ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    gap: 65px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-bottom img {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-form {
+        flex-wrap: wrap;
+    }
+}
