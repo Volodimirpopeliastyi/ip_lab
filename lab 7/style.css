@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+  line-height: 1.4;
+}
+
+.container,
+.main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #003366;
+  border-left: 4px solid #0056b3;
+  padding-left: 12px;
+}
+
+/* --- HEADER: FLEXBOX (Mobile-first: до 767px — 1 колонка) --- */
+header#events_container {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dce3ec;
+}
+
+.events-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.event-card {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f9fbfd;
+  border: 1px solid #e1e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.event-card img,
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-info,
+.news-body {
+  padding: 14px;
+}
+
+.event-date,
+.news-body time {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.event-info h3,
+.news-body h3 {
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+/* --- MAIN: CSS GRID (Mobile-first: до 767px — 1 колонка) --- */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* --- БРЕЙКПОІНТ 2: Tablet (768px – 1023px — 2 колонки) --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .events-flex {
+    flex-direction: row;
+  }
+
+  .event-card {
+    flex: 0 1 calc(50% - 8px);
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- БРЕЙКПОІНТ 3: Desktop (1024px і більше — 4 колонки) --- */
+@media (min-width: 1024px) {
+  .events-flex {
+    flex-direction: row;
+  }
+
+  .event-card {
+    flex: 0 1 calc(25% - 12px);
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
